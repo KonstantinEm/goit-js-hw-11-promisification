@@ -2,9 +2,6 @@ const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-/*
- * Должно работать так
- */
 const makeTransaction = (transaction) => {
   return new Promise((onSuccess, onError) => {
     const delay = randomIntegerFromInterval(200, 500);
